@@ -5,7 +5,13 @@
 
 `npm i`
 
-`npm run watch`
+### 개발
+
+`npm run start`
+
+### 빌드
+
+`npm run build`
 
 ## vscode 설정
 
@@ -13,7 +19,13 @@
 - `settings.json`열고 다음 추가
 
 ```json
-"editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
+{
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "eslint.alwaysShowStatus": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "javascript.format.enable": false,
+    "typescript.format.enable": false
 }
 ```
