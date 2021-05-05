@@ -3,19 +3,11 @@ import styled from 'styled-components';
 import Theme from '../theme/theme';
 
 const Title = styled.h1.attrs({
-  className: `i`,
+    className: 'i',
 })`
   background-color: ${(props) => props.theme.colors.lightBlue};
 `;
 
-export default class App extends React.Component {
-  public render() {
-    return (
-      <div>
-        <Theme>
-          <Title>Hello World</Title>
-        </Theme>
-      </div>
-    );
-  }
-}
+const App: React.FC = (): React.ReactElement => <div><Theme><Title>App Header</Title></Theme></div>;
+
+export default App;
