@@ -19,7 +19,6 @@ type Props = {
   children: React.ReactNode;
 }
 
-// eslint-disable-next-line max-len
 const Theme: FC<Props> = (props: Props): ReactElement => {
     const { children } = props;
     return (<ThemeProvider theme={theme}>{children}</ThemeProvider>);

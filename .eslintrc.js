@@ -20,6 +20,8 @@ module.exports = {
         '@typescript-eslint',
     ],
     rules: {
+        'arrow-body-style': ['error', 'as-needed'],
+        'max-line': 150,
         indent: ['error', 4],
         'no-use-before-define': 'off',
         // react 등 임포트 미리하기
